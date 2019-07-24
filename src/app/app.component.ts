@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-resume';
+  title = 'My Resume';
   scrollToElement($element): void {
-    console.log($element);
     $element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
