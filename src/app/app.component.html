@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar>
   <span class="center-toolbar">
   <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
@@ -8,9 +7,21 @@
 </span>
 </mat-toolbar>
 
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+
+
+  <mat-card>
+      <img mat-card-image src="{{backgroundImage}}" class="backgroundImageClass">
+    <div class="logo-title-subtitle">
+    <div class="logo-div"><img mat-card-avatar src="{{logo}}"></div>
+  <mat-card-title-group>
+      <mat-card-title>
+     {{ title | uppercase}}
+      </mat-card-title>
+      <mat-card-subtitle> Application Developer | Graphic Designer </mat-card-subtitle>
+      <!-- <img mat-card-image> -->
+    </mat-card-title-group>
+    </div>
+  </mat-card>
 
 <div style="min-height: 500px"></div>
   <div #aboutMe><about-me></about-me> </div>

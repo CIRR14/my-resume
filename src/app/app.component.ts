@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'My Resume';
+  title = 'Ivan Romero';
+  backgroundImage = 'assets/background.jpg';
+  logo = 'assets/logo72.png';
+
   scrollToElement($element): void {
+    console.log('hello');
     $element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
