@@ -1,35 +1,38 @@
 <mat-toolbar>
   <span class="center-toolbar">
-  <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
-  <button mat-button (click)="scrollToElement(resume)">RESUME</button>
-  <button mat-button (click)="scrollToElement(portfolio)">PORTFOLIO</button>
-  <button mat-button (click)="scrollToElement(contact)">CONTACT</button>
-</span>
+    <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
+    <button mat-button (click)="scrollToElement(resume)">RESUME</button>
+    <button mat-button (click)="scrollToElement(portfolio)">PORTFOLIO</button>
+    <button mat-button (click)="scrollToElement(contact)">CONTACT</button>
+  </span>
 </mat-toolbar>
 
-
-
-  <mat-card>
-      <img mat-card-image src="{{backgroundImage}}" class="backgroundImageClass">
-    <div class="logo-title-subtitle">
-    <div class="logo-div"><img mat-card-avatar src="{{logo}}"></div>
-  <mat-card-title-group>
+<mat-card>
+  <img
+    mat-card-image
+    src="{{ altBackgroundImage }}"
+    alt="{{ backgroundImage }}"
+    class="backgroundImageClass"
+  />
+  <div class="logo-title-subtitle">
+    <div class="logo-div"><img mat-card-avatar src="{{ logo }}" /></div>
+    <mat-card-title-group>
       <mat-card-title>
-     {{ title | uppercase}}
+        {{ title | uppercase }}
       </mat-card-title>
-      <mat-card-subtitle> Application Developer | Graphic Designer </mat-card-subtitle>
-      <!-- <img mat-card-image> -->
+      <mat-card-subtitle>
+        Application Developer | Graphic Designer
+      </mat-card-subtitle>
     </mat-card-title-group>
-    </div>
-  </mat-card>
+  </div>
+</mat-card>
 
+<div #aboutMe><about-me></about-me></div>
 <div style="min-height: 500px"></div>
-  <div #aboutMe><about-me></about-me> </div>
-  <div style="min-height: 500px"></div>
-  <div #resume><resume></resume> </div>
-  <div style="min-height: 500px"></div>
-  <div #portfolio><portfolio></portfolio> </div>
-  <div style="min-height: 500px"></div>
-  <div #contact><contact></contact> </div>
-  <div style="min-height: 500px"></div>
-  <div style="min-height: 1000px"></div>
+<div #resume><resume></resume></div>
+<div style="min-height: 500px"></div>
+<div #portfolio><portfolio></portfolio></div>
+<div style="min-height: 500px"></div>
+<div #contact><contact></contact></div>
+<div style="min-height: 500px"></div>
+<div style="min-height: 1000px"></div>

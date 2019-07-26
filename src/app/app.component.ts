@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Ivan Romero';
   backgroundImage = 'assets/background.jpg';
+  altBackgroundImage = 'assets/mohawk_lake.jpg';
   logo = 'assets/logo72.png';
 
   scrollToElement($element): void {
