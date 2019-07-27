@@ -1,18 +1,36 @@
 mat-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: block;
   font-size: 25px;
   font-weight: bolder;
 }
 
 mat-card-content {
+  display: block;
+  font-size: 16px;
+}
+
+.avatar {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 16px;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-grid {
+  justify-content: flex-start;
+}
+
+img {
+  display: flex;
+  height: 100px;
+  width: 100px;
 }
 
 div {

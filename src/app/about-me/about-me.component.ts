@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
+  logo = 'assets/logo72.png';
+
   age = 22;
   email = 'ivanrr308@gmail.com';
   phone = '314-724-0837';

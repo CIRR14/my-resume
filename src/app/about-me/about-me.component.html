@@ -1,40 +1,62 @@
 <mat-divider></mat-divider>
 <mat-card>
-  <mat-card-header>About Me </mat-card-header>
-  <mat-card-content>Application developer, graphic designer and illustrator creating awesome and effective visual identities for companies of all sizes around the globe. Let's start scrolling and learn more about me.</mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-header>Contact Details </mat-card-header>
-  <mat-list>
-    <div
-      gdAreas="email myEmail | phone myPhone | location myLocation | languages myLanguages"
-      gdGap="16px"
-      gdRows="auto auto auto"
-    >
-      <div gdArea="email" class="category">
-        Email:
+    <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="avatar">
+            <img mat-card-avatar src="{{ logo }}" />
+          </div>
+          </div>
+          <div class="col-8">
+              <mat-card-header>About Me </mat-card-header>
+              <mat-card-content>Application developer, graphic designer and illustrator creating awesome and effective visual identities for companies of all sizes around the globe. Let's start scrolling and learn more about me.</mat-card-content>
+            </div>
+          <div class="w-100"></div>
+          <div class="col-4">
+            <div class="download-button">
+            <button mat-stroked-button>Download Resume</button>
+          </div>
+          </div>
+          <div class="col-8">
+
+              <mat-card-header>Contact Details </mat-card-header>
+
+              <div class="contact-grid"
+              gdAreas="email myEmail | phone myPhone | location myLocation | languages myLanguages"
+              gdGap="16px"
+              gdRows="auto auto auto"
+            >
+              <div gdArea="email" class="category">
+                Email:
+              </div>
+              <div gdArea="myEmail" >
+                {{ email }}
+              </div>
+              <div gdArea="phone" class="category">
+                Phone:
+              </div>
+              <div gdArea="myPhone">
+                {{ phone }}
+              </div>
+              <div gdArea="location" class="category">
+                Current Location:
+              </div>
+              <div gdArea="myLocation">
+                {{ currentLocation }}
+              </div>
+              <div gdArea="languages" class="category">
+                Languages:
+              </div>
+              <div gdArea="myLanguages">
+                {{ languages }}
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-      <div gdArea="myEmail" >
-        {{ email }}
-      </div>
-      <div gdArea="phone" class="category">
-        Phone:
-      </div>
-      <div gdArea="myPhone">
-        {{ phone }}
-      </div>
-      <div gdArea="location" class="category">
-        Current Location:
-      </div>
-      <div gdArea="myLocation">
-        {{ currentLocation }}
-      </div>
-      <div gdArea="languages" class="category">
-        Languages:
-      </div>
-      <div gdArea="myLanguages">
-        {{ languages }}
-      </div>
-    </div>
-  </mat-list>
+
+
+
 </mat-card>
