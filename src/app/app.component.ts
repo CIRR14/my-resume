@@ -12,7 +12,6 @@ export class AppComponent {
   logo = 'assets/logo72.png';
 
   scrollToElement($element): void {
-    console.log('hello');
     $element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',

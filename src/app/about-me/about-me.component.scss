@@ -3,8 +3,24 @@ mat-card-header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+div {
+  align-items: center;
+  justify-content: center;
+}
+
+.category {
   font-size: 20px;
   font-weight: bolder;
-  color: black !important;
-  background: white !important;
 }

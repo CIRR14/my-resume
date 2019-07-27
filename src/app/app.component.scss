@@ -1,3 +1,18 @@
+.icons {
+padding: 10px;
+display: flex;
+block-size: 10px;
+object-fit: contain;
+}
+
+.github-icon {
+  padding: 15px;
+}
+
+.linkedin-icon {
+  padding: 15px;
+}
+
 mat-toolbar {
   width: 100%;
   box-sizing: content-box;
@@ -26,7 +41,7 @@ mat-card {
 .logo-title-subtitle {
   padding-bottom: 10px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
