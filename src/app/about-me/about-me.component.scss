@@ -11,15 +11,15 @@ mat-card-content {
 
 .avatar {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: start;
   text-align: center;
 }
 
 .download-button {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: start;
   text-align: center;
 }
 

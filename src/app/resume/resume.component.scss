@@ -2,9 +2,39 @@ mat-card-header {
   display: block;
   font-size: 25px;
   font-weight: bolder;
+  padding-top: 15px;
 }
 
 mat-card-content {
   display: block;
   font-size: 16px;
+}
+
+mat-card-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+mat-divider {
+  width: 75% !important;
+  left: 17% !important;
+}
+
+mat-progress-bar {
+  padding-bottom: 15px;
+}
+
+.container {
+  padding-top: 15px;
+}
+
+.underlined {
+  border-bottom: 4px solid green;
+}
+
+.left-headers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  text-align: center;
 }
