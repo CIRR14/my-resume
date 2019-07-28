@@ -15,7 +15,7 @@ export class AppComponent {
     $element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
-      inline: 'nearest'
+      inline: 'start'
     });
   }
 }
