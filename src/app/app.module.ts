@@ -17,6 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -39,7 +40,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatGridListModule,
     MatListModule,
     MatProgressBarModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

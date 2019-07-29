@@ -1,5 +1,8 @@
-<mat-toolbar>
-    <button mat-button (click)="turnToDarkTheme()"><span *ngIf="desktop">{{ currentTheme }}</span> <mat-icon> brush </mat-icon></button>
+<mat-toolbar *ngIf="desktop">
+    <button mat-button *ngIf="lightTheme" (click)="toggleTheme('custom-theme-dark')"><span *ngIf="desktop">{{ toggleToThisTheme }}</span>
+      <mat-icon> brush </mat-icon></button>
+    <button mat-button *ngIf="darkTheme" (click)="toggleTheme('custom-theme-light')"><span *ngIf="desktop">{{ toggleToThisTheme }}</span>
+    <mat-icon> brush </mat-icon></button>
   <span class="center-toolbar">
     <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
     <button mat-button (click)="scrollToElement(resume)">RESUME</button>
@@ -7,7 +10,6 @@
     <button mat-button (click)="scrollToElement(contact)">CONTACT</button>
   </span>
 </mat-toolbar>
-
 
   <img
     mat-card-image
@@ -36,7 +38,6 @@
   </div>
 
 
-
 <mat-card><div #aboutMe class="top"><about-me></about-me></div></mat-card>
 
 <mat-card><div #resume class="top"><resume></resume></div></mat-card>
@@ -44,6 +45,4 @@
 <mat-card><div #portfolio class="top"><portfolio></portfolio></div></mat-card>
 
 <mat-card><div #contact class="top"><contact></contact></div></mat-card>
-
-
 
