@@ -2,5 +2,19 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$custom-primary: mat-palette($mat-deep-purple);
+$custom-accent:  mat-palette($mat-pink);
+
+$custom-theme: mat-light-theme($custom-primary, $custom-accent);
+
+mat-card {
+  width: 100% !important;
+}
+
+@include angular-material-theme($custom-theme);

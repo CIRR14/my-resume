@@ -2,6 +2,7 @@ mat-card-header {
   display: block;
   font-size: 25px;
   font-weight: bolder;
+  padding-bottom: 15px;
 }
 
 mat-card-content {
@@ -9,17 +10,40 @@ mat-card-content {
   font-size: 16px;
 }
 
-.avatar {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: center;
+.container {
+  padding-bottom: 65px !important;
 }
+
+// .avatar {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   text-align: center;
+// }
+
+@media (max-width: 995px) {
+   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: top !important;
+    }
+ };
+
+ @media (max-width: 995px) {
+  .category {
+    font-size: 15px !important;
+  }
+  .contact-grid {
+    font-size: 15px;
+  }
+};
 
 .download-button {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -27,11 +51,20 @@ mat-card-content {
   justify-content: flex-start;
 }
 
-img {
+@media (max-width: 995px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+ };
+
+ img {
   display: flex;
-  height: 100px;
-  width: 100px;
+  max-height: 400px;
+  opacity: 0.80;
+  margin-bottom: 20px;
 }
+
 
 div {
   align-items: center;

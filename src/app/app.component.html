@@ -7,7 +7,7 @@
   </span>
 </mat-toolbar>
 
-<mat-card>
+
   <img
     mat-card-image
     src="{{ altBackgroundImage }}"
@@ -33,17 +33,16 @@
       </mat-card-subtitle>
     </mat-card-title-group>
   </div>
-</mat-card>
 
 
 
-<div #aboutMe><about-me></about-me></div>
+<mat-card><div #aboutMe class="top"><about-me></about-me></div></mat-card>
 
-<div #resume><resume></resume></div>
+<mat-card><div #resume class="top"><resume></resume></div></mat-card>
 
-<div #portfolio><portfolio></portfolio></div>
+<mat-card><div #portfolio class="top"><portfolio></portfolio></div></mat-card>
 
-<div #contact><contact></contact></div>
+<mat-card><div #contact class="top"><contact></contact></div></mat-card>
 
 
 
