@@ -1,13 +1,16 @@
 <mat-toolbar *ngIf="desktop">
-    <button mat-button *ngIf="lightTheme" (click)="toggleTheme('custom-theme-dark')"><span *ngIf="desktop">{{ toggleToThisTheme }}</span>
-      <mat-icon> brush </mat-icon></button>
-    <button mat-button *ngIf="darkTheme" (click)="toggleTheme('custom-theme-light')"><span *ngIf="desktop">{{ toggleToThisTheme }}</span>
-    <mat-icon> brush </mat-icon></button>
-  <span class="center-toolbar">
-    <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
-    <button mat-button (click)="scrollToElement(resume)">RESUME</button>
-    <button mat-button (click)="scrollToElement(portfolio)">PORTFOLIO</button>
-    <button mat-button (click)="scrollToElement(contact)">CONTACT</button>
+    <button mat-button *ngIf="!darkTheme && lightTheme" class="dark-theme-button" (click)="toggleTheme('custom-theme-dark')">
+      <mat-icon [ngStyle]="{'color':'white'}"> brush </mat-icon>
+    </button>
+    <button mat-button *ngIf="darkTheme && !lightTheme" class="light-theme-button" (click)="toggleTheme('custom-theme-light')">
+        <mat-icon [ngStyle]="{'color':'black'}"> brush </mat-icon>
+      </button>
+
+  <span flex class="center-toolbar">
+    <button mat-button [ngStyle]="{'color': aboutMe ? '' : ''}" (click)="scrollToElement(aboutMe)">ABOUT ME</button>
+    <button mat-button [ngStyle]="" (click)="scrollToElement(resume)">RESUME</button>
+    <button mat-button [ngStyle]="" (click)="scrollToElement(portfolio)">PORTFOLIO</button>
+    <button mat-button [ngStyle]="" (click)="scrollToElement(contact)">CONTACT</button>
   </span>
 </mat-toolbar>
 
