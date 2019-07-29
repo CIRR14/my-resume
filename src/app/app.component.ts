@@ -1,13 +1,16 @@
-import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
-import { OverlayContainer, ScrollingVisibility} from '@angular/cdk/overlay';
+import { Component, OnInit, HostBinding, ElementRef } from '@angular/core';
+import { OverlayContainer} from '@angular/cdk/overlay';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent implements OnInit {
-  constructor(public overlayContainer: OverlayContainer) {}
+  constructor(public overlayContainer: OverlayContainer, private el: ElementRef) {}
 
   @HostBinding('class') componentCssClass;
   title = 'Ivan Romero';
@@ -21,11 +24,6 @@ export class AppComponent implements OnInit {
   desktop = true;
   mobile = false;
   innerWidth: any;
-
-  aboutMe = false;
-  resume = false;
-  portfolio = false;
-  contact = false;
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
@@ -44,19 +42,6 @@ export class AppComponent implements OnInit {
       inline: 'start'
     });
   }
-
-  @HostListener('window:scroll', [])
-onWindowScroll() {
- console.log(scrollY);
- console.log(this.aboutMe);
- if (scrollY >= 835 && scrollY <= 1665) {
-   console.log('HELLO');
-  //  this.aboutMe = true;
-   console.log(this.aboutMe);
- } else {
-  //  this.aboutMe = false;
- }
-}
 
   toggleTheme(theme) {
     this.overlayContainer.getContainerElement().classList.add(theme);

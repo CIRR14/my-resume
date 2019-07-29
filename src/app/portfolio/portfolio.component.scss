@@ -18,3 +18,31 @@ div {
   align-items: center;
   justify-content: center;
 }
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 995px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+ };
+
+ img {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  height: auto;
+}

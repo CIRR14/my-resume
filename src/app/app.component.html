@@ -7,10 +7,10 @@
       </button>
 
   <span flex class="center-toolbar">
-    <button mat-button [ngStyle]="{'color': aboutMe ? '' : ''}" (click)="scrollToElement(aboutMe)">ABOUT ME</button>
-    <button mat-button [ngStyle]="" (click)="scrollToElement(resume)">RESUME</button>
-    <button mat-button [ngStyle]="" (click)="scrollToElement(portfolio)">PORTFOLIO</button>
-    <button mat-button [ngStyle]="" (click)="scrollToElement(contact)">CONTACT</button>
+    <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
+    <button mat-button (click)="scrollToElement(resume)">RESUME</button>
+    <button mat-button (click)="scrollToElement(portfolio)">PORTFOLIO</button>
+    <button mat-button (click)="scrollToElement(contact)">CONTACT</button>
   </span>
 </mat-toolbar>
 
@@ -48,4 +48,5 @@
 <mat-card><div #portfolio class="top"><portfolio></portfolio></div></mat-card>
 
 <mat-card><div #contact class="top"><contact></contact></div></mat-card>
+
 
