@@ -1,4 +1,5 @@
 <mat-toolbar>
+    <button mat-button (click)="turnToDarkTheme()"><span *ngIf="desktop">{{ currentTheme }}</span> <mat-icon> brush </mat-icon></button>
   <span class="center-toolbar">
     <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
     <button mat-button (click)="scrollToElement(resume)">RESUME</button>

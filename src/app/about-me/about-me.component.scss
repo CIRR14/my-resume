@@ -14,12 +14,12 @@ mat-card-content {
   padding-bottom: 65px !important;
 }
 
-// .avatar {
-//   display: flex;
-//   align-items: flex-start;
-//   justify-content: flex-start;
-//   text-align: center;
-// }
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 @media (max-width: 995px) {
    button {
@@ -46,6 +46,12 @@ mat-card-content {
   justify-content: center;
   text-align: center;
 }
+
+button {
+  display: flex;
+
+
+  }
 
 .contact-grid {
   justify-content: flex-start;
