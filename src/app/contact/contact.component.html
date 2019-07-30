@@ -1,28 +1,17 @@
-    <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <div class="avatar">
-Here 1
-          </div>
-          </div>
-          <div class="col-8">
-              <mat-card-header>Header</mat-card-header>
-              <mat-card-content>
-                Stuff
-              </mat-card-content>
-            </div>
-          <div class="w-100"></div>
-          <div class="col-4">
-           More stuff
-          </div>
-          <div class="col-8">
-
-              <mat-card-header>Header </mat-card-header>
-
-             Stuff
-
-
-          </div>
-        </div>
-      </div>
-
+<form [formGroup]="contactForm">
+    <input type = "text"
+          name = "email"
+          placeholder = "email"
+          formControlName="email"
+          #email>
+    <br/>
+    <input type = "password"
+          name = "pwd"
+          placeholder = "password"
+          formControlName="password"
+          #password>
+    <br/>
+    <input type = "submit"
+            value = "submit"
+            (click) = "onClickSubmit(email.value, password.value)" >
+  </form>

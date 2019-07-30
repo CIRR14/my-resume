@@ -5,6 +5,11 @@ block-size: 10px;
 object-fit: contain;
 }
 
+img {
+  width: 100% ;
+  height: auto;
+}
+
 .dark-theme-button {
   background-color: #212121;
 }
@@ -102,6 +107,7 @@ mat-card-title {
   justify-content: center;
   text-align: center;
   margin-bottom: 0px;
+  font-size: 7vw;
 }
 
 mat-card-subtitle {
@@ -110,4 +116,5 @@ mat-card-subtitle {
   justify-content: center;
   text-align: center;
   color: black !important;
+  font-size: 2vw;
 }
