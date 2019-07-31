@@ -1,19 +1,18 @@
 .icons {
-padding: 10px;
-display: flex;
-block-size: 10px;
-object-fit: contain;
+  padding: 10px;
+  display: flex;
+  block-size: 10px;
+  object-fit: contain;
 }
 
 img {
-  width: 100% ;
+  width: 100%;
   height: auto;
 }
 
 .dark-theme-button {
   background-color: #212121;
 }
-
 
 .light-theme-button {
   background-color: whitesmoke;
@@ -24,7 +23,7 @@ img {
 }
 
 button:focus {
-  color : rgb(56, 146, 56);
+  color: rgb(56, 146, 56);
 }
 
 .github-icon {
@@ -42,11 +41,9 @@ mat-toolbar {
   z-index: 999;
 }
 
-
 .center-toolbar {
   margin: 0 auto;
 }
-
 
 .backgroundImageClass {
   opacity: 0.7;
@@ -59,7 +56,7 @@ mat-toolbar {
 
 mat-card {
   width: 100%;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -92,14 +89,14 @@ mat-card {
 
 @media (min-width: 995px) {
   mat-card-title {
-  font-size: 70px;
-  margin-bottom: 0px;
+    font-size: 70px;
+    margin-bottom: 0px;
   }
 
   mat-card-subtitle {
     font-size: 20px;
   }
-};
+}
 
 mat-card-title {
   display: flex;
