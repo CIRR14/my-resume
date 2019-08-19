@@ -1,8 +1,41 @@
+@import '~@angular/material/theming';
+@import 'src/styles.scss';
+
 mat-card-header {
   display: block;
   font-size: 25px;
   font-weight: bolder;
 }
+
+mat-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 3vw;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: mat-color($custom-secondary) !important;
+}
+
+@media (max-width: 995px)
+{
+  mat-card-title {
+    font-size: 7vw;
+  }
+}
+
 
 mat-card-content {
   display: block;

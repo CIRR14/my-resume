@@ -7,18 +7,22 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  angForm: FormGroup;
+  contactMeForm: FormGroup;
   constructor(private fb: FormBuilder) {
     this.createForm();
   }
 
   createForm() {
-    this.angForm = this.fb.group({
+    this.contactMeForm = this.fb.group({
       name: ['', Validators.required ],
       email: ['', Validators.required ],
       subject: ['', Validators.required ],
       message: ['', Validators.required]
     });
+  }
+
+  submit() {
+    console.log(this.contactMeForm.value);
   }
 
   ngOnInit() {
