@@ -1,3 +1,4 @@
+<div #topOfPage></div>
 <mat-toolbar *ngIf="desktop">
     <button mat-button *ngIf="!darkTheme && lightTheme" class="dark-theme-button" (click)="toggleTheme('custom-theme-dark')">
       <mat-icon [ngStyle]="{'color':'white'}"> brush </mat-icon>
@@ -5,6 +6,7 @@
     <button mat-button *ngIf="darkTheme && !lightTheme" class="light-theme-button" (click)="toggleTheme('custom-theme-light')">
         <mat-icon [ngStyle]="{'color':'black'}"> brush </mat-icon>
       </button>
+
 
   <span flex class="center-toolbar">
     <button mat-button (click)="scrollToElement(aboutMe)">ABOUT ME</button>
@@ -36,9 +38,15 @@
       <a href="https://www.linkedin.com/in/ivanromero14/" target="_blank">
         <img class="linkedin-icon" src ="../assets/linkedin.svg">
       </a>
+      <a href="https://cesarromero.myportfolio.com/" target="_blank">
+        <img class="adobe-portfolio-icon" src ="../assets/adobe-portfolio-logo.svg">
+      </a>
       </mat-card-subtitle>
     </mat-card-title-group>
   </div>
+
+
+
 
 
 <mat-card><div #aboutMe class="top"><about-me></about-me></div></mat-card>
@@ -48,6 +56,8 @@
 <mat-card><div #portfolio class="top"><portfolio></portfolio></div></mat-card>
 
 <mat-card><div #contact class="top"><contact></contact></div></mat-card>
+
+<button class="btt-btn" mat-button (click)="scrollToElement(topOfPage)"> <i class="material-icons">&#xE316;</i></button>
 
 <app-footer></app-footer>
 
