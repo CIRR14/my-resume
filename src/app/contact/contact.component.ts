@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
   }
 
   submit() {
+    alert('Message not sent; Coming soon. Email me at ivanrr308@gmail.com.')
     console.log(this.contactMeForm.value);
   }
 

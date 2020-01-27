@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutMeComponent {
   logo = 'assets/logo72.png';
 
-  age = 22;
+  age = 23;
   email = 'ivanrr308@gmail.com';
   phone = '314-724-0837';
   currentLocation = 'St. Louis, MO';

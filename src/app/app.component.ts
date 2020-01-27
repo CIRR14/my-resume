@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    console.log( innerWidth );
     if (this.innerWidth <= 500) {
       this.desktop = false;
       this.mobile = true;
