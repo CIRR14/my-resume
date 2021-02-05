@@ -21,6 +21,7 @@ export class ResumeComponent {
     { name: 'Java', outOfTen: 45 }, // Tech
     { name: 'Firebase', outOfTen: 85 }, // Art
     { name: 'AWS', outOfTen: 50 }, // Tech
-    { name: 'Microsoft 365', outOfTen: 95 } // Art
+    { name: 'Microsoft 365', outOfTen: 95 }, // Art
+    { name: 'GraphQL', outOfTen: 40}
   ];
 }
